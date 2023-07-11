@@ -1,0 +1,18 @@
+:root{
+    --cor-flow: #DAA628 ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+p, h1, h2 ,h3 ,h4 ,h5 ,h6, a, span, strong{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #fcf7ed;
+}

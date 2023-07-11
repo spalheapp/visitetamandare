@@ -1,0 +1,230 @@
+#footerMobile{
+    border-radius:  50px 50px 0px 0px;
+    background: #1c1e21;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#buttonBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--cor-flow);
+
+    
+    margin: 30px;
+
+    height: 40px;
+    border-radius: 100px;
+
+
+}
+
+#buttonDownload {
+    color: #1c1e21;
+    font-weight: 600;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Social */
+
+#Social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    max-width: 350px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#Social a{
+    border: 1px solid #fff;
+    color: #fff;
+    background: #292929;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 45px;
+    width: 45px;
+
+    border-radius: 100px;
+}
+
+/* logoFooter */
+
+#logoFooter{
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+#logoFooter img{
+    max-width: 110px;
+    margin-left: 30px;
+}
+
+/* footer links */
+
+footer #links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerLinks div{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footerLinks a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* direitos */
+
+#direitos{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+#direitos2{
+    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: #1c1e21;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* responsivo tablet */
+
+@media(max-width:700px){
+    #Social{
+        max-width: none;
+        justify-content: space-evenly;
+    }
+}
+
+@media(min-width: 700px){
+    #Social{
+        max-width: none;
+        justify-content: space-evenly;
+    }
+
+    .footerLinks{
+
+        justify-content: center;
+    }
+    .footerLinks > div{
+        flex-direction: row;
+
+    }
+    #linksBox1, #linksBox2{
+        margin: 10px;
+    }
+    .linksFooter div{
+        margin: 10px;
+    }
+    #logoFooter{
+        margin-left: 30px;
+    }
+    #direitos div{
+        margin-left: 60px;
+    }
+}
+
+@media(max-width:1000px){
+    #direitos2{
+        display: none;
+    }
+}
+
+@media(min-width: 1000px){
+    #footerMobile{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        padding-bottom: 15px;
+    }
+    #footerLinks > div{
+        margin: 30px;
+    }
+    #firstbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        margin: none;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #logoFooter{
+        margin-left: 0;
+    }
+    #logoFooter img{
+        margin: 15px;
+    }
+    #links{
+        padding: 0;
+    }
+    #direitos{
+        display: none;
+    }
+    #buttonBox{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #Social a{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    #direitos{
+        display: none;
+    }
+
+}
+

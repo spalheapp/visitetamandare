@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-brasil">
+<head>
+    <script language="JavaScript">
+        function protegercodigo() {
+        if (event.button==2||event.button==3){
+            alert('Código protegido por: Marcos Santos');}
+        }
+        document.onmousedown=protegercodigo
+    </script>
+    <script>
+    if (document.addEventListener) {
+        document.addEventListener("keydown", bloquearSource);
+    } else { //Versões antigas do IE
+        document.attachEvent("onkeydown", bloquearSource);
+    }
+    
+    function bloquearSource(e) {
+        e = e || window.event;
+    
+        var code = e.which || e.keyCode;
+    
+        if (
+            e.ctrlKey &&
+            (code == 83 || code == 85) //83 = S, 85 = U
+        ) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            } else {
+                e.returnValue = false;
+            }
+    
+            return false;
+        }
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/call.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/loading.css">
+
+    <title>Visite Tamandaré® | Site Oficial | Os melhores locais da cidade!</title>
+    <meta name="title" content="Espaço para recarregar as energias - Visite Tamandaré®">
+    <meta name="description" content="Espaço para recarregar as energias.">
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="assets/favicons/favicon.png" />
+
+</head>
+<body>
+    <div id="loading">
+         <div></div>
+        <img class="pulse" src="src/img/loogoapp.png" alt="">
+        <img src="src/img/marca.png" alt="" style="margin: 15px;">
+    </div>
+    <header>    
+        <style>
+            /* ===== Scrollbar CSS ===== */
+          /* Firefox */
+          * {
+            scrollbar-width: auto;
+            scrollbar-color: #DAA628 #ffffff;
+          }
+          
+          /* Chrome, Edge, and Safari */
+          *::-webkit-scrollbar {
+            width: 13px;
+          }
+          
+          *::-webkit-scrollbar-track {
+            background: #ffffff;
+          }
+          
+          *::-webkit-scrollbar-thumb {
+            background-image: linear-gradient(180deg, #DAA628 0%, #FFF2E1 99%);
+            border-radius: 10px;
+            border: 3px solid #ffffff;
+          }
+          </style>          
+        <nav  >
+            <button onclick=menu()><i class="fa-solid fa-bars fa-2x"></i></button>
+            <div id="logoNav">
+                <img src="src/img/logo/DSxOAUB0raA.png" alt="">
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow"><p>Baixar</p> <i class="fa-solid fa-arrow-down"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="mainContainer" class="container">
+            <div id="side1">
+                <h1>Visite Tamandaré</h1>
+                <h1 id="second">Tudo em um só lugar!</h1>
+                <p>Encontre os melhores lugares para comer, beber, fazer compras ou visitar em qualquer cidade do mundo.</p>
+                <a class="buttonDownload" href="https://web.visitetamandare.com" target="_blank"><p>Entrar</p> &nbsp;<i class="fa-solid fa-earth-americas"></i></a>
+            </div>
+            <div id="side2">
+                <img id="talkMobile" src="src/img/imagens flutuar/Frame 1.png" alt="">
+                <img id="talkDesktop" src="src/img/imagens flutuar/Frame 2.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section id="call1" class="container">
+        <div class="call1Text">
+            <h1>ACREDITAMOS NO PODER DA LOCALIZAÇÃO</h1>
+            <p>Se ele disse onde, provavelmente é construído no Guia Flow.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow&pli=1">saiba mais  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+        <div id="call1Img">
+            <img src="src/img/imagens celulares e stickears/318720890_1536072873564505_5949698170439292870_n.png" alt="">
+        </div>
+    </section>
+    <section id="call2" >
+        <div class="container" id="callBox2">
+            <div class="call1Text">
+                <h1 id="first">Seu guia turístico</h1>
+                <h1 id="second">nunca foi tão acessível</h1>
+                <p>Ter informações atualizadas é a preocupação número um dos viajantes. Com o Guia Flow, você não precisa se preocupar em imprimir uma nova versão do seu guia</p>
+                <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow&pli=1">saiba mais  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </div>
+            <div id="call2Img">
+                <img src="src/img/imagens celulares e stickears/criptografia.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="call1" class="container">
+        <div class="call1Text">
+            <h1>Viaje tranquilamente com Guia Flow</h1>
+            <p>Planeje sua próxima viagem de acordo com as avaliações e receba dicas da nossa comunidade sobre onde se hospedar, quais locais visitar e que atividades turísticas realizar.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow&pli=1">saiba mais  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+        <div id="call1Img">
+            <img src="src/img/imagens celulares e stickears/Group 3.png" alt="" style="max-width:100%;">
+        </div>
+    </section>
+
+    <section id="call4" class="container" >
+        <div class="call1Text">
+            <h1>Reservas e Hospedagem</h1>
+            <p>Nosso aplicativo permite que você aproveite ao máximo sua viagem, seja planejando com antecedência ou no destino.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow&pli=1">saiba mais  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+        <div id="call1Img">
+            <img src="src/img/imagens celulares e stickears/mulher sorrindo.png" alt="" style="max-width:100%;">
+        </div>
+    </section>
+
+    <section id="call1" class="container">
+        <div class="call1Text">
+            <h1>Guia Flow: O seu melhor companheiro de viagens e eventos</h1>
+            <p>Mantenha-se atualizado sobre os eventos populares mais recentes como shows, festivais, eventos em feriados como Véspera de Ano Novo ou carnaval e eventos profissionais.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow&pli=1">saiba mais  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+        <div id="call1Img">
+            <img src="src/img/imagens celulares e stickears/buiseness.png" alt="">
+        </div>
+    </section>
+
+    <footer id="footerMobile" >
+        <div id="firstbox" >
+            <div id="buttonBox">
+                <a id="buttonDownload" href="/app" target="_blank">Baixar</a>
+            </div>
+            <div id="Social">
+                <a href="https://www.instagram.com/visit.tamandare_carneiros/" class="socialButton">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="" class="socialButton">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="" class="socialButton">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/" class="socialButton">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="links" >
+            <div id="logoFooter">
+                <img src="src/img/Qhrnh5evyPV.png" alt="">
+            </div>
+
+            <div class="footerLinks">
+                
+                <div id="linksBox1" class="linksFooter">
+                    <div>
+                        <p>Empresa</p>
+                        <a href="/sobre" target="_blank">Quem somos</a>
+                        <a href="/premium" target="_blank">Pacote Premium</a>
+                        <a href="/empresa" target="_blank">Imprensa</a>
+                        <a href="/faq" target="_blank">Fale conosco</a>
+                        <a href="https://open.spotify.com/playlist/2Ki37eeC5DbXXe5haVnH2M?si=98855b9cac404787" target="_blank">Visite Tamandaré Spotify</a>
+                    </div>
+                    <div>
+                        <p>O que fazemos</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Lugares únicos</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Avaliações</a>
+                        <a href="/faq" target="_blank">FAQ</a>
+                        <a href="https://api.whatsapp.com/send?phone=5581999992438&text=Ol%C3%A1!%20Gostaria%20de%20an%C3%BAnciar%20no%20Guia%20Flow." target="_blank">Anuncie conosco</a>
+                    </div>
+
+                </div>
+                <div id="linksBox2" class="linksFooter">
+                    <div>
+                        <p>Recursos</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Praia</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Pacotes</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Restaurantes</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Reservas</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.guiaflow">Eventos</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="direitos">
+            <div>
+                <p>
+                    © 2023 Visite Tamandaré
+                </p>
+                <a href="/privacy" target="_blank">Termos de Serviço</a>
+            </div>
+        </div>
+
+    </footer>
+    <div id="direitos2">
+        <div>
+            <p>
+                © 2023 Visite Tamandaré
+            </p>
+            <a href="/privacy" target="_blank">Termos de Serviço</a>
+        </div>
+    </div>
+    <!-- START Widget WhastApp -->
+<a href="https://api.whatsapp.com/send?phone=5581999992438&text=Olá!%20Gostaria%20de%20anúnciar%20no%20Guia%20Flow." class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJibGFjayIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJ3aGF0c2FwcCI+PHBhdGggZD0iTTMwLDYwIEM0Ni41Njg1NDMzLDYwIDYwLDQ2LjU2ODU0MzMgNjAsMzAgQzYwLDEzLjQzMTQ1NjcgNDYuNTY4NTQzMywwIDMwLDAgQzEzLjQzMTQ1NjcsMCAwLDEzLjQzMTQ1NjcgMCwzMCBDMCw0Ni41Njg1NDMzIDEzLjQzMTQ1NjcsNjAgMzAsNjAgWiIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0zMC4wNzEyNjE1LDQ2LjIyMTA0NjIgQzI3LjIxMDgzMDgsNDYuMjIxMDQ2MiAyNC41MjM1NjkyLDQ1LjQ4OTk2OTIgMjIuMTg1Niw0NC4yMDY4OTIzIEwxMy4xNTM4NDYyLDQ3LjA3NjkyMzEgTDE2LjA5ODA5MjMsMzguMzkxODc2OSBDMTQuNjEzMDQ2MiwzNS45NTIzNjkyIDEzLjc1NzUzODUsMzMuMDkxNTY5MiAxMy43NTc1Mzg1LDMwLjAzMzYgQzEzLjc1NzUzODUsMjEuMDkzNDE1NCAyMS4wNjEyOTIzLDEzLjg0NjE1MzggMzAuMDcxNjMwOCwxMy44NDYxNTM4IEMzOS4wODA4NjE1LDEzLjg0NjE1MzggNDYuMzg0NjE1NCwyMS4wOTM0MTU0IDQ2LjM4NDYxNTQsMzAuMDMzNiBDNDYuMzg0NjE1NCwzOC45NzM3ODQ2IDM5LjA4MTIzMDgsNDYuMjIxMDQ2MiAzMC4wNzEyNjE1LDQ2LjIyMTA0NjIgWiBNMzAuMDcxMjYxNSwxNi40MjQxMjMxIEMyMi41MDc5Mzg1LDE2LjQyNDEyMzEgMTYuMzU1ODE1NCwyMi41MjkzNTM4IDE2LjM1NTgxNTQsMzAuMDMzNiBDMTYuMzU1ODE1NCwzMy4wMTE0NDYyIDE3LjMyNjUyMzEsMzUuNzY5MjMwOCAxOC45NjgxMjMxLDM4LjAxMzA0NjIgTDE3LjI1NDg5MjMsNDMuMDY3MDc2OSBMMjIuNTI1MjkyMyw0MS4zOTE4NzY5IEMyNC42OTEyLDQyLjgxMzc4NDYgMjcuMjg1NDE1NCw0My42NDMwNzY5IDMwLjA3MTI2MTUsNDMuNjQzMDc2OSBDMzcuNjMzNDc2OSw0My42NDMwNzY5IDQzLjc4NjcwNzcsMzcuNTM4MjE1NCA0My43ODY3MDc3LDMwLjAzMzk2OTIgQzQzLjc4NjcwNzcsMjIuNTI5NzIzMSAzNy42MzM0NzY5LDE2LjQyNDEyMzEgMzAuMDcxMjYxNSwxNi40MjQxMjMxIEwzMC4wNzEyNjE1LDE2LjQyNDEyMzEgWiBNMzguMzA4OCwzMy43NjE3MjMxIEMzOC4yMDgzNjkyLDMzLjU5NjY3NjkgMzcuOTQxNzg0NiwzMy40OTY5ODQ2IDM3LjU0MjY0NjIsMzMuMjk4NzA3NyBDMzcuMTQyNCwzMy4xMDA0MzA4IDM1LjE3NTg3NjksMzIuMTQwMDYxNSAzNC44MDk5NjkyLDMyLjAwODI0NjIgQzM0LjQ0Mjk1MzgsMzEuODc2MDYxNSAzNC4xNzYsMzEuODA5MjMwOCAzMy45MDk3ODQ2LDMyLjIwNjUyMzEgQzMzLjY0MzU2OTIsMzIuNjAzODE1NCAzMi44NzcwNDYyLDMzLjQ5Njk4NDYgMzIuNjQzMzIzMSwzMy43NjE3MjMxIEMzMi40MDk5NjkyLDM0LjAyNjgzMDggMzIuMTc2OTg0NiwzNC4wNjAwNjE1IDMxLjc3NzEwNzcsMzMuODYxNDE1NCBDMzEuMzc3NiwzMy42NjMxMzg1IDMwLjA4ODk4NDYsMzMuMjQ0MDYxNSAyOC41NjExMDc3LDMxLjg5MjMwNzcgQzI3LjM3MjU1MzgsMzAuODQwNzM4NSAyNi41Njk4NDYyLDI5LjU0MjUyMzEgMjYuMzM2ODYxNSwyOS4xNDQ4NjE1IEMyNi4xMDM1MDc3LDI4Ljc0NzkzODUgMjYuMzEyMTIzMSwyOC41MzM0MTU0IDI2LjUxMjI0NjIsMjguMzM1ODc2OSBDMjYuNjkyMDYxNSwyOC4xNTc5MDc3IDI2LjkxMjEyMzEsMjcuODcyNDkyMyAyNy4xMTIyNDYyLDI3LjY0MDk4NDYgQzI3LjMxMjM2OTIsMjcuNDA5MTA3NyAyNy4zNzg4MzA4LDI3LjI0NDA2MTUgMjcuNTExNzUzOCwyNi45Nzg5NTM4IEMyNy42NDU0MTU0LDI2LjcxNDIxNTQgMjcuNTc4NTg0NiwyNi40ODI3MDc3IDI3LjQ3ODUyMzEsMjYuMjgzNjkyMyBDMjcuMzc4NDYxNSwyNi4wODU0MTU0IDI2LjU3ODMzODUsMjQuMTMyOTIzMSAyNi4yNDUyOTIzLDIzLjMzODMzODUgQzI1LjkxMjI0NjIsMjIuNTQ0NDkyMyAyNS41Nzk1NjkyLDIyLjY3NjY3NjkgMjUuMzQ1ODQ2MiwyMi42NzY2NzY5IEMyNS4xMTI0OTIzLDIyLjY3NjY3NjkgMjQuODQ1OTA3NywyMi42NDM0NDYyIDI0LjU3OTMyMzEsMjIuNjQzNDQ2MiBDMjQuMzEyNzM4NSwyMi42NDM0NDYyIDIzLjg3OTI2MTUsMjIuNzQyNzY5MiAyMy41MTI2MTU0LDIzLjEzOTY5MjMgQzIzLjE0NjMzODUsMjMuNTM2OTg0NiAyMi4xMTM2LDI0LjQ5Njk4NDYgMjIuMTEzNiwyNi40NDkxMDc3IEMyMi4xMTM2LDI4LjQwMTYgMjMuNTQ1ODQ2MiwzMC4yODggMjMuNzQ2MzM4NSwzMC41NTIzNjkyIEMyMy45NDYwOTIzLDMwLjgxNjczODUgMjYuNTExODc2OSwzNC45NTM2IDMwLjU3NjczODUsMzYuNTQyNCBDMzQuNjQzMDc2OSwzOC4xMzA4MzA4IDM0LjY0MzA3NjksMzcuNjAwOTg0NiAzNS4zNzYzNjkyLDM3LjUzNDg5MjMgQzM2LjEwODU1MzgsMzcuNDY4OCAzNy43NDEyOTIzLDM2LjU3NTI2MTUgMzguMDc1NDQ2MiwzNS42NDg4NjE1IEMzOC40MDgxMjMxLDM0LjcyMTcyMzEgMzguNDA4MTIzMSwzMy45MjcxMzg1IDM4LjMwODgsMzMuNzYxNzIzMSBMMzguMzA4OCwzMy43NjE3MjMxIFoiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9nPjwvc3ZnPg==" alt="" width="60px">
+    </a>
+    <span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:red;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
+    <div id="msg1" style="right: 90px; visibility: visible; background: #1EBC59; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100; ">Fale conosco pelo WhatsApp</div>
+    <script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
+    <!-- END Widget WhastApp -->
+
+</body>
+<script src="script/MenuButton.js"></script>
+<script src="script/loading.js"></script>
+<script src="https://kit.fontawesome.com/bb2d553a57.js" crossorigin="anonymous"></script>
+</html>
