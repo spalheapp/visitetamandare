@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script language="JavaScript">
+    function protegercodigo() {
+    if (event.button==2||event.button==3){
+        alert('Código protegido por: Equipe Flow 🗺️');}
+    }
+    document.onmousedown=protegercodigo
+</script>
+<script>
+if (document.addEventListener) {
+    document.addEventListener("keydown", bloquearSource);
+} else { //Versões antigas do IE
+    document.attachEvent("onkeydown", bloquearSource);
+}
+
+function bloquearSource(e) {
+    e = e || window.event;
+
+    var code = e.which || e.keyCode;
+
+    if (
+        e.ctrlKey &&
+        (code == 83 || code == 85) //83 = S, 85 = U
+    ) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+
+        return false;
+    }
+}
+</script>
+  <title>Premium - Guia Flow</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+<link rel="shortcut icon" href="https://guiaflow.com/assets/favicons/favicon.png" />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="font-size:16px;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;line-height:1.3;color:#0a0a0a;text-align:left;width:100% !important">
+<div class="preheader" style="mso-hide:all;visibility:hidden;opacity:0;color:transparent;font-size:0px;width:0;height:0;display:none !important"></div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style data-roadie-ignore="" data-immutable="true" type="text/css">
+  @font-face {
+    font-family: 'Circular Black';
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-ab30a4ec2fa5ec7fa296e75df5cb2ad9.eot");
+    src: url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-ab30a4ec2fa5ec7fa296e75df5cb2ad9.eot?#") format("eot"),
+      url("https://a1.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-6c7330bc572333f4258c6d546f7a1b1a.woff") format("woff"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-1a567149aaf7713739d485ea003a67b6.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-c10c36404923b10fc45cdf9098617c4a.ttf") format("truetype"),
+      url("https://a0.muscache.com/airbnb/rookery/fonts/Circular-Air-Pro-ExtraBlack-22f8e76a70d586a3893d0afecd1accc0.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: 'Circular Light';
+    src: url("https://a1.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-199f6f9d92c4f5f0cabe9ce7765467a9.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: Circular;
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-a952ee2c4bd292728a2439f767e3a260.eot");
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-1f5a0275bdd69dbbeadffab401c698a2.woff2") format("woff2"),
+      url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-7f15c543c7006815105f5df71824836d.woff") format("woff"),
+      url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book-98e37c7514bb7096658cabbf6d43e783.svg") format("svg");
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face{
+    font-family: Circular;
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-35e1cf57d93dc4eb3db11cc2448cb91f.eot");
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-4909b413294f9048153d6dee23438b24.woff2") format("woff2"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-1db902f5b85bbb0964e2994434edbe16.woff") format("woff"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Book_Italic-0d9eb203b260869dc2470ae35162fc1e.svg") format("svg");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face{
+    font-family: Circular;
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-c4da182b004982220ffd5caf5555cf2d.eot");
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-7ceb09864a7ed03b9c10cfa2f7281315.woff2") format("woff2"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-eacfa7beaa999351b4f89935e0126b19.woff") format("woff"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Bold-190e0f26359cdc7d8d093e1a04983ed3.svg") format("svg");
+    font-weight: 700; font-style: normal;
+  }
+
+  @font-face{
+    font-family: Circular;
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-3d9fa9ce4a6feb3bb7eab142470dd7d3.eot");
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-42f300daf805956564cdf1fcb56d2c6f.woff2") format("woff2"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-1cf016706a26eb4bf820dca2dca82c9f.woff") format("woff"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-ea56415eb35466568fd22e41c7352796.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: Circular;
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-3d9fa9ce4a6feb3bb7eab142470dd7d3.eot");
+    src: url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-42f300daf805956564cdf1fcb56d2c6f.woff2") format("woff2"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-1cf016706a26eb4bf820dca2dca82c9f.woff") format("woff"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/Circular_Air-Light-ea56415eb35466568fd22e41c7352796.svg") format("svg");
+    font-weight: 200;
+    font-style: normal;
+  }
+</style>
+
+    
+    
+    
+    <style data-roadie-ignore="" data-immutable="true">
+      @media only screen and (max-width: 460px) {
+        .small-float-center {
+          margin: 0 auto !important;
+          float: none !important;
+          text-align: center !important; }
+        .small-text-center {
+          text-align: center !important; }
+        .small-text-left {
+          text-align: left !important; }
+        .small-text-right {
+          text-align: right !important; } }
+
+        @media only screen and (max-width: 460px) {
+          table.body table.container .hide-for-medium {
+            display: block !important;
+            width: auto !important;
+            overflow: visible !important;
+            max-height: none !important; } }
+
+      @media only screen and (max-width: 460px) {
+        table.body table.container .row.hide-for-medium,
+        table.body table.container .row.hide-for-medium {
+          display: table !important;
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 460px) {
+        table.body table.container .show-for-medium {
+          display: none !important;
+          width: 0;
+          mso-hide: all;
+          overflow: hidden; } }
+
+      @media only screen and (max-width: 596px) {
+        .small-float-center {
+          margin: 0 auto !important;
+          float: none !important;
+          text-align: center !important; }
+        .small-text-center {
+          text-align: center !important; }
+        .small-text-left {
+          text-align: left !important; }
+        .small-text-right {
+          text-align: right !important; } }
+
+        @media only screen and (max-width: 596px) {
+          table.body table.container .hide-for-large {
+            display: block !important;
+            width: auto !important;
+            overflow: visible !important;
+            max-height: none !important; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body table.container .row.hide-for-large,
+        table.body table.container .row.hide-for-large {
+          display: table !important;
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body table.container .show-for-large {
+          display: none !important;
+          width: 0;
+          mso-hide: all;
+          overflow: hidden; } }
+
+      @media only screen and (max-width: 596px) {
+        table.body img {
+          width: auto !important;
+          height: auto !important; }
+        table.body center {
+          min-width: 0 !important; }
+        table.body .container {
+          width: 95% !important; }
+        table.body .columns,
+        table.body .column {
+          height: auto !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 16px !important;
+          padding-right: 16px !important; }
+          table.body .columns .column,
+          table.body .columns .columns,
+          table.body .column .column,
+          table.body .column .columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important; }
+          table.body .columns .column.nested,
+          table.body .columns .columns.nested,
+          table.body .column .column.nested,
+          table.body .column .columns.nested {
+            padding-left: 16px !important;
+            padding-right: 16px !important; }
+        table.body .collapse .columns,
+        table.body .collapse .column {
+          padding-left: 0 !important;
+          padding-right: 0 !important; }
+        td.small-1,
+        th.small-1 {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        td.small-2,
+        th.small-2 {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        td.small-3,
+        th.small-3 {
+          display: inline-block !important;
+          width: 25% !important; }
+        td.small-4,
+        th.small-4 {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        td.small-5,
+        th.small-5 {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        td.small-6,
+        th.small-6 {
+          display: inline-block !important;
+          width: 50% !important; }
+        td.small-7,
+        th.small-7 {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        td.small-8,
+        th.small-8 {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        td.small-9,
+        th.small-9 {
+          display: inline-block !important;
+          width: 75% !important; }
+        td.small-10,
+        th.small-10 {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        td.small-11,
+        th.small-11 {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        td.small-12,
+        th.small-12 {
+          display: inline-block !important;
+          width: 100% !important; }
+        .columns td.small-12,
+        .column td.small-12,
+        .columns th.small-12,
+        .column th.small-12 {
+          display: block !important;
+          width: 100% !important; }
+        .body .columns td.small-1,
+        .body .column td.small-1,
+        td.small-1 center,
+        .body .columns th.small-1,
+        .body .column th.small-1,
+        th.small-1 center {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        .body .columns td.small-2,
+        .body .column td.small-2,
+        td.small-2 center,
+        .body .columns th.small-2,
+        .body .column th.small-2,
+        th.small-2 center {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        .body .columns td.small-3,
+        .body .column td.small-3,
+        td.small-3 center,
+        .body .columns th.small-3,
+        .body .column th.small-3,
+        th.small-3 center {
+          display: inline-block !important;
+          width: 25% !important; }
+        .body .columns td.small-4,
+        .body .column td.small-4,
+        td.small-4 center,
+        .body .columns th.small-4,
+        .body .column th.small-4,
+        th.small-4 center {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        .body .columns td.small-5,
+        .body .column td.small-5,
+        td.small-5 center,
+        .body .columns th.small-5,
+        .body .column th.small-5,
+        th.small-5 center {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        .body .columns td.small-6,
+        .body .column td.small-6,
+        td.small-6 center,
+        .body .columns th.small-6,
+        .body .column th.small-6,
+        th.small-6 center {
+          display: inline-block !important;
+          width: 50% !important; }
+        .body .columns td.small-7,
+        .body .column td.small-7,
+        td.small-7 center,
+        .body .columns th.small-7,
+        .body .column th.small-7,
+        th.small-7 center {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        .body .columns td.small-8,
+        .body .column td.small-8,
+        td.small-8 center,
+        .body .columns th.small-8,
+        .body .column th.small-8,
+        th.small-8 center {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        .body .columns td.small-9,
+        .body .column td.small-9,
+        td.small-9 center,
+        .body .columns th.small-9,
+        .body .column th.small-9,
+        th.small-9 center {
+          display: inline-block !important;
+          width: 75% !important; }
+        .body .columns td.small-10,
+        .body .column td.small-10,
+        td.small-10 center,
+        .body .columns th.small-10,
+        .body .column th.small-10,
+        th.small-10 center {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        .body .columns td.small-11,
+        .body .column td.small-11,
+        td.small-11 center,
+        .body .columns th.small-11,
+        .body .column th.small-11,
+        th.small-11 center {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        table.body td.small-offset-1,
+        table.body th.small-offset-1 {
+          margin-left: 8.33333% !important;
+          Margin-left: 8.33333% !important; }
+        table.body td.small-offset-2,
+        table.body th.small-offset-2 {
+          margin-left: 16.66667% !important;
+          Margin-left: 16.66667% !important; }
+        table.body td.small-offset-3,
+        table.body th.small-offset-3 {
+          margin-left: 25% !important;
+          Margin-left: 25% !important; }
+        table.body td.small-offset-4,
+        table.body th.small-offset-4 {
+          margin-left: 33.33333% !important;
+          Margin-left: 33.33333% !important; }
+        table.body td.small-offset-5,
+        table.body th.small-offset-5 {
+          margin-left: 41.66667% !important;
+          Margin-left: 41.66667% !important; }
+        table.body td.small-offset-6,
+        table.body th.small-offset-6 {
+          margin-left: 50% !important;
+          Margin-left: 50% !important; }
+        table.body td.small-offset-7,
+        table.body th.small-offset-7 {
+          margin-left: 58.33333% !important;
+          Margin-left: 58.33333% !important; }
+        table.body td.small-offset-8,
+        table.body th.small-offset-8 {
+          margin-left: 66.66667% !important;
+          Margin-left: 66.66667% !important; }
+        table.body td.small-offset-9,
+        table.body th.small-offset-9 {
+          margin-left: 75% !important;
+          Margin-left: 75% !important; }
+        table.body td.small-offset-10,
+        table.body th.small-offset-10 {
+          margin-left: 83.33333% !important;
+          Margin-left: 83.33333% !important; }
+        table.body td.small-offset-11,
+        table.body th.small-offset-11 {
+          margin-left: 91.66667% !important;
+          Margin-left: 91.66667% !important; }
+        table.body table.columns td.expander,
+        table.body table.columns th.expander {
+          display: none !important; }
+        table.body .right-text-pad,
+        table.body .text-pad-right {
+          padding-left: 10px !important; }
+        table.body .left-text-pad,
+        table.body .text-pad-left {
+          padding-right: 10px !important; }
+        table.menu {
+          width: 100% !important; }
+          table.menu td,
+          table.menu th {
+            width: auto !important;
+            display: inline-block !important; }
+          table.menu.vertical td,
+          table.menu.vertical th, table.menu.small-vertical td,
+          table.menu.small-vertical th {
+            display: block !important; }
+        table.menu[align="center"] {
+          width: auto !important; }
+        table.button.expand {
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 460px) {
+        table.body img {
+          width: auto !important;
+          height: auto !important; }
+        table.body center {
+          min-width: 0 !important; }
+        table.body .container {
+          width: 95% !important; }
+        table.body .columns,
+        table.body .column {
+          height: auto !important;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 16px !important;
+          padding-right: 16px !important; }
+          table.body .columns .column,
+          table.body .columns .columns,
+          table.body .column .column,
+          table.body .column .columns {
+            padding-left: 0 !important;
+            padding-right: 0 !important; }
+        table.body .collapse .columns,
+        table.body .collapse .column {
+          padding-left: 0 !important;
+          padding-right: 0 !important; }
+        td.small-medium-1,
+        th.small-medium-1 {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        td.small-medium-2,
+        th.small-medium-2 {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        td.small-medium-3,
+        th.small-medium-3 {
+          display: inline-block !important;
+          width: 25% !important; }
+        td.small-medium-4,
+        th.small-medium-4 {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        td.small-medium-5,
+        th.small-medium-5 {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        td.small-medium-6,
+        th.small-medium-6 {
+          display: inline-block !important;
+          width: 50% !important; }
+        td.small-medium-7,
+        th.small-medium-7 {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        td.small-medium-8,
+        th.small-medium-8 {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        td.small-medium-9,
+        th.small-medium-9 {
+          display: inline-block !important;
+          width: 75% !important; }
+        td.small-medium-10,
+        th.small-medium-10 {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        td.small-medium-11,
+        th.small-medium-11 {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        td.small-medium-12,
+        th.small-medium-12 {
+          display: inline-block !important;
+          width: 100% !important; }
+        .columns td.small-medium-12,
+        .column td.small-medium-12,
+        .columns th.small-medium-12,
+        .column th.small-medium-12 {
+          display: block !important;
+          width: 100% !important; }
+        .body .columns td.small-medium-1,
+        .body .column td.small-medium-1,
+        td.small-medium-1 center,
+        .body .columns th.small-medium-1,
+        .body .column th.small-medium-1,
+        th.small-medium-1 center {
+          display: inline-block !important;
+          width: 8.33333% !important; }
+        .body .columns td.small-medium-2,
+        .body .column td.small-medium-2,
+        td.small-medium-2 center,
+        .body .columns th.small-medium-2,
+        .body .column th.small-medium-2,
+        th.small-medium-2 center {
+          display: inline-block !important;
+          width: 16.66667% !important; }
+        .body .columns td.small-medium-3,
+        .body .column td.small-medium-3,
+        td.small-medium-3 center,
+        .body .columns th.small-medium-3,
+        .body .column th.small-medium-3,
+        th.small-medium-3 center {
+          display: inline-block !important;
+          width: 25% !important; }
+        .body .columns td.small-medium-4,
+        .body .column td.small-medium-4,
+        td.small-medium-4 center,
+        .body .columns th.small-medium-4,
+        .body .column th.small-medium-4,
+        th.small-medium-4 center {
+          display: inline-block !important;
+          width: 33.33333% !important; }
+        .body .columns td.small-medium-5,
+        .body .column td.small-medium-5,
+        td.small-medium-5 center,
+        .body .columns th.small-medium-5,
+        .body .column th.small-medium-5,
+        th.small-medium-5 center {
+          display: inline-block !important;
+          width: 41.66667% !important; }
+        .body .columns td.small-medium-6,
+        .body .column td.small-medium-6,
+        td.small-medium-6 center,
+        .body .columns th.small-medium-6,
+        .body .column th.small-medium-6,
+        th.small-medium-6 center {
+          display: inline-block !important;
+          width: 50% !important; }
+        .body .columns td.small-medium-7,
+        .body .column td.small-medium-7,
+        td.small-medium-7 center,
+        .body .columns th.small-medium-7,
+        .body .column th.small-medium-7,
+        th.small-medium-7 center {
+          display: inline-block !important;
+          width: 58.33333% !important; }
+        .body .columns td.small-medium-8,
+        .body .column td.small-medium-8,
+        td.small-medium-8 center,
+        .body .columns th.small-medium-8,
+        .body .column th.small-medium-8,
+        th.small-medium-8 center {
+          display: inline-block !important;
+          width: 66.66667% !important; }
+        .body .columns td.small-medium-9,
+        .body .column td.small-medium-9,
+        td.small-medium-9 center,
+        .body .columns th.small-medium-9,
+        .body .column th.small-medium-9,
+        th.small-medium-9 center {
+          display: inline-block !important;
+          width: 75% !important; }
+        .body .columns td.small-medium-10,
+        .body .column td.small-medium-10,
+        td.small-medium-10 center,
+        .body .columns th.small-medium-10,
+        .body .column th.small-medium-10,
+        th.small-medium-10 center {
+          display: inline-block !important;
+          width: 83.33333% !important; }
+        .body .columns td.small-medium-11,
+        .body .column td.small-medium-11,
+        td.small-medium-11 center,
+        .body .columns th.small-medium-11,
+        .body .column th.small-medium-11,
+        th.small-medium-11 center {
+          display: inline-block !important;
+          width: 91.66667% !important; }
+        table.body td.small-medium-offset-1,
+        table.body th.small-medium-offset-1 {
+          margin-left: 8.33333% !important;
+          Margin-left: 8.33333% !important; }
+        table.body td.small-medium-offset-2,
+        table.body th.small-medium-offset-2 {
+          margin-left: 16.66667% !important;
+          Margin-left: 16.66667% !important; }
+        table.body td.small-medium-offset-3,
+        table.body th.small-medium-offset-3 {
+          margin-left: 25% !important;
+          Margin-left: 25% !important; }
+        table.body td.small-medium-offset-4,
+        table.body th.small-medium-offset-4 {
+          margin-left: 33.33333% !important;
+          Margin-left: 33.33333% !important; }
+        table.body td.small-medium-offset-5,
+        table.body th.small-medium-offset-5 {
+          margin-left: 41.66667% !important;
+          Margin-left: 41.66667% !important; }
+        table.body td.small-medium-offset-6,
+        table.body th.small-medium-offset-6 {
+          margin-left: 50% !important;
+          Margin-left: 50% !important; }
+        table.body td.small-medium-offset-7,
+        table.body th.small-medium-offset-7 {
+          margin-left: 58.33333% !important;
+          Margin-left: 58.33333% !important; }
+        table.body td.small-medium-offset-8,
+        table.body th.small-medium-offset-8 {
+          margin-left: 66.66667% !important;
+          Margin-left: 66.66667% !important; }
+        table.body td.small-medium-offset-9,
+        table.body th.small-medium-offset-9 {
+          margin-left: 75% !important;
+          Margin-left: 75% !important; }
+        table.body td.small-medium-offset-10,
+        table.body th.small-medium-offset-10 {
+          margin-left: 83.33333% !important;
+          Margin-left: 83.33333% !important; }
+        table.body td.small-medium-offset-11,
+        table.body th.small-medium-offset-11 {
+          margin-left: 91.66667% !important;
+          Margin-left: 91.66667% !important; }
+        table.body table.columns td.expander,
+        table.body table.columns th.expander {
+          display: none !important; }
+        table.body .right-text-pad,
+        table.body .text-pad-right {
+          padding-left: 10px !important; }
+        table.body .left-text-pad,
+        table.body .text-pad-left {
+          padding-right: 10px !important; }
+        table.menu {
+          width: 100% !important; }
+          table.menu td,
+          table.menu th {
+            width: auto !important;
+            display: inline-block !important; }
+          table.menu.vertical td,
+          table.menu.vertical th, table.menu.small-medium-vertical td,
+          table.menu.small-medium-vertical th {
+            display: block !important; }
+        table.menu[align="center"] {
+          width: auto !important; }
+        table.button.expand {
+          width: 100% !important; } }
+
+      @media only screen and (max-width: 596px) {
+        .calendar-content {
+          padding: 0px !important;
+          width: 288px !important;
+        }
+
+        .not-available-day, .calendar-today, .available-day {
+          height: 40px !important;
+          width: 40px !important;
+        }
+
+        .day-label {
+          margin-left: 10% !important;
+          margin-top: 0% !important;
+          font-size: 15px;
+        }
+      }
+    </style>
+      <meta name="filler" content="╔═══╗╔╗─╔╗╔══╗╔═══╗     ╔═══╗╔╗───╔═══╗──────">
+      <meta name="filler" content="║╔═╗║║║─║║╚╣─╝║╔═╗║     ║╔══╝║║───║╔═╗║──────">
+      <meta name="filler" content="║║─╚╝║║─║║─║║─║║─║║     ║╚══╗║║───║║─║║╔╗╔╗╔╗">
+      <meta name="filler" content="║║╔═╗║║─║║─║║─║╚═╝║     ║╔══╝║║─╔╗║║─║║║╚╝╚╝║">
+      <meta name="filler" content="║╚╩═║║╚═╝║╔╣─╗║╔═╗║     ║║───║╚═╝║║╚═╝║╚╗╔╗╔╝">
+      <meta name="filler" content="╚═══╝╚═══╝╚══╝╚╝─╚╝     ╚╝───╚═══╝╚═══╝─╚╝╚╝─">
+    
+  
+  
+    <img class="tracking" src="https://guiaflow.com/faq" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block;display:none">
+<img class="tracking" src="" width="1" height="1" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block">
+    <table class="body" style="border-spacing:0;border-collapse:collapse;vertical-align:top;-webkit-hyphens:none;-moz-hyphens:none;hyphens:none;-ms-hyphens:none;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;margin:0;text-align:left;font-size:16px;line-height:19px;background:#f3f3f3;padding:0;width:100%;height:100%;color:#0a0a0a;margin-bottom:0px !important;background-color: white">
+      <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+        <td class="center" align="center" valign="top" style="font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;padding:0;margin:0;font-weight:normal;border-collapse:collapse !important">
+          <center style="width:100%;min-width:580px">
+            <!--[if mso]>
+              <table class="container" width="580">
+            <![endif]-->
+            <!--[if !mso]> <!-- -->
+              <table class="container" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;background:#fefefe;width:580px;margin:0 auto;text-align:inherit;max-width:580px;">
+            <!-- <![endif]-->
+              <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+                <td style="font-size:16px;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;vertical-align:top;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;padding:0;margin:0;font-weight:normal;border-collapse:collapse !important">
+                  <div>
+<table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+  <tbody><tr class="" style="padding:0;vertical-align:top;text-align:left">
+    <th class="columns first large-12 last small-12" style="font-size:16px;padding:0;text-align:left;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;line-height:1.3;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <a href="https://guiaflow.com/faq" style="font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none" target="_blank">
+<img align="center" alt="" class="center standard-header" height="30" src="imagens/logoflow.png" style="display:block;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;border:none;padding-top:48px;padding-bottom:16px;max-height:30px">      </a>
+    </th>
+  </tr>
+</tbody></table>
+</div>
+<div style="padding-top:32px">
+<table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+  <tbody><tr class="" style="padding:0;vertical-align:top;text-align:left">
+    <th class="columns first large-12 last small-12" style="font-size:16px;padding:0;text-align:left;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;line-height:1.3;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <p class="headline headline-lg heavy max-width-485" style="padding:0;margin:0;text-align:left;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;max-width:485px;font-weight:700;color:#484848;line-height:1.3;word-break:normal;font-size:32px;-moz-hyphens:none;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;margin-bottom:0 !important;">
+        Anuncie no Guia Flow
+      </p>
+    </th>
+  </tr>
+</tbody></table>
+</div>
+<div style="padding-bottom:32px">
+<table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+  <tbody><tr class="" style="padding:0;vertical-align:top;text-align:left">
+    <th class="columns first large-12 last small-12" style="font-size:16px;padding:0;text-align:left;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;line-height:1.3;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <p class="body  body-lg body-link-rausch light text-left   " style="font-family:'Circular', Helvetica, Arial, sans-serif;padding:0;margin:0;line-height:1.4;font-weight:300;color:#484848;font-size:18px;hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;-moz-hyphens:none;text-align:left;margin-bottom:0px !important;">
+        Seja premium é um serviço de assinatura anual opcional que desbloqueia recursos exclusivos adicionais.      </p>
+    </th>
+  </tr>
+</tbody></table>
+</div>
+<div style="padding-bottom:16px">
+<div class="feature body-link-rausch">
+  <table class="" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left">
+    <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+      <th style="color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-height:19px">
+        <table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+          <tbody><tr><th class="columns first valign-top small-12 large-2" style="font-size:16px;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;text-align:left;vertical-align:top;padding-right:8px;margin:0 auto;padding-bottom:16px;width:80.66667px;padding-left:16px">
+<img alt="" class="" src="imagens/diamante.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block">          </th>
+          <th class="columns last valign-top small-12 large-10" style="font-size:16px;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;vertical-align:top;width:467.33333px;padding-left:16px;margin:0 auto;padding-bottom:16px;padding-right:16px">
+            <p class="body-text-lg heavy row-pad-bot-1" style="padding:0;margin:0;text-align:left;font-size:24px;font-weight:700;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.2;padding-bottom:8px !important;margin-bottom:0px !important">
+Premium            </p>
+            <p class="body-text light " style="margin:0;text-align:left;padding:0;font-weight:300;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.4;font-size:18px;margin-bottom:0px !important">
+No Premium os parceiros têm mais opções para divulgar sua empresa, notificação push, alteração semanal quando precisar e empresa em destaque.            </p>
+          </th>
+        </tr></tbody></table>
+      </th>
+    </tr>
+  </tbody></table>
+</div>
+</div>
+<div style="padding-bottom:16px">
+<div class="feature body-link-rausch">
+  <table class="" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left">
+    <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+      <th style="color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-height:19px">
+        <table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+          <tbody><tr><th class="columns first valign-top small-12 large-2" style="font-size:16px;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;text-align:left;vertical-align:top;padding-right:8px;margin:0 auto;padding-bottom:16px;width:80.66667px;padding-left:16px">
+<img alt="" class="" src="imagens/pousada.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block">          </th>
+          <th class="columns last valign-top small-12 large-10" style="font-size:16px;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;vertical-align:top;width:467.33333px;padding-left:16px;margin:0 auto;padding-bottom:16px;padding-right:16px">
+            <p class="body-text-lg heavy row-pad-bot-1" style="padding:0;margin:0;text-align:left;font-size:24px;font-weight:700;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.2;padding-bottom:8px !important;margin-bottom:0px !important">
+Sua Empresa            </p>
+            <p class="body-text light " style="margin:0;text-align:left;padding:0;font-weight:300;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.4;font-size:18px;margin-bottom:0px !important">
+A sua empresa têm mais visibilidade no aplicativo e no site Guia Flow, seja premium.            </p>
+          </th>
+        </tr></tbody></table>
+      </th>
+    </tr>
+  </tbody></table>
+</div>
+</div>
+<div style="padding-bottom:16px">
+<div class="feature body-link-rausch">
+  <table class="" style="border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left">
+    <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+      <th style="color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-height:19px">
+        <table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+          <tbody><tr><th class="columns first valign-top small-12 large-2" style="font-size:16px;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;text-align:left;vertical-align:top;padding-right:8px;margin:0 auto;padding-bottom:16px;width:80.66667px;padding-left:16px">
+<img alt="" class="" src="imagens/suporte.png" style="outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block">          </th>
+          <th class="columns last valign-top small-12 large-10" style="font-size:16px;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;vertical-align:top;width:467.33333px;padding-left:16px;margin:0 auto;padding-bottom:16px;padding-right:16px">
+            <p class="body-text-lg heavy row-pad-bot-1" style="padding:0;margin:0;text-align:left;font-size:24px;font-weight:700;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.2;padding-bottom:8px !important;margin-bottom:0px !important">
+Suporte ao Cliente            </p>
+            <p class="body-text light " style="margin:0;text-align:left;padding:0;font-weight:300;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;color:#484848;word-break:normal;line-height:1.4;font-size:18px;margin-bottom:0px !important">
+Nossa equipe estará disponível 24h a fim de entregar a melhor experiência em atendimento e no momento que você precisar!            </p>
+          </th>
+        </tr></tbody></table>
+      </th>
+    </tr>
+  </tbody></table>
+</div>
+</div>
+<div style="padding-bottom:24px">
+<table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+  <tbody><tr style="padding:0;vertical-align:top;text-align:left">
+    <th class="col-pad-left-2 col-pad-right-2" style="color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0;text-align:left;font-size:16px;line-height:1.3;padding-left:16px;padding-right:16px">
+      <a href="https://api.whatsapp.com/send?phone=5581999992438&text=Olá!%20Gostaria%20de%20anúnciar%20no%20Guia%20Flow" class="btn-primary btn-lg btn-rausch" style="font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;margin:0;text-align:left;line-height:1.3;color:#2199e8;text-decoration:none;background-color:#6EC2B1;-webkit-border-radius:4px;border-radius:4px;padding:19px 24px 19px 24px;display:block" target="_blank">
+        <p class="text-center" style="font-weight:normal;padding:0;margin:0;text-align:center;color:white;font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;font-size:24px;line-height:32px;margin-bottom:0px !important">
+          Fale Conosco
+        </p>
+      </a>
+    </th>
+  </tr>
+</tbody></table>
+</div>
+<div>
+<table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+  <tbody><tr class="" style="padding:0;vertical-align:top;text-align:left">
+    <th class="columns first large-12 last small-12 standard-footer-padding" style="font-size:16px;text-align:left;line-height:1.3;color:#0a0a0a;font-family:'Circular', Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+      <div style="padding-top:56px">
+        <table class="row" style="border-spacing:0;border-collapse:collapse;text-align:left;vertical-align:top;padding:0;width:100%;position:relative;display:table">
+          <tr class="" style="padding:0;vertical-align:top;text-align:left">
+            <th class="small-12 large-12 columns first last standard-footer-padding" style="font-size:16px;text-align:left;line-height:1.3;color:#0a0a0a;font-family:Helvetica, Arial, sans-serif;font-weight:normal;padding:0;margin:0 auto;padding-bottom:16px;width:564px;padding-left:16px;padding-right:16px">
+              <hr class="standard-footer-hr" style="clear:both;max-width:580px;border-right:0;border-bottom:1px solid #cacaca;border-left:0;border-top:0;background-color:#dbdbdb;height:2px;width:100%;border:none;margin:auto">
+              <div class="row-pad-bot-4" style="padding-bottom:32px"></div>
+              </a>
+              <p class="standard-footer-text center" style='font-family:"Helvetica", Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;margin-bottom:10px;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;font-weight:100;line-height:1.4'>Criado com ♥ por Equipe Flow</p>
+              <p class="standard-footer-text" style='font-family:"Helvetica", Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;margin-bottom:10px;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;font-weight:100;line-height:1.4'>Guia Flow,‌ I‌n‌c‌.‌ Rua do forte (Cerca do IBAMA)‌,‌
+                ‌Tamandaré-PE</p>
+              <p class="standard-footer-text" style='font-family:"Helvetica", Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;margin-bottom:10px;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;font-weight:100;line-height:1.4'>© 2020 Guia Flow, Tudo com base na plataforma Guia Flow,
+                <br>‌Tamandaré-PE, Brasil, CEP: 55578-000</p>
+      <p class="standard-footer-text " style="font-family:&quot;Circular&quot;, &quot;Helvetica&quot;, Helvetica, Arial, sans-serif;padding:0;margin:0;text-align:left;margin-bottom:10px;color:#9ca299;font-size:14px;text-shadow:0 1px #fff;font-weight:300;line-height:1.4">
+      </p>
+    </th>
+  </tr>
+</tbody></table>
+</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+  
+
+
+
+</body>
+<!-- partial -->
+  
+</body>
+</html>
